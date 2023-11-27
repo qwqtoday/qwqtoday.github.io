@@ -3,7 +3,7 @@ body {
 }
 
 @keyframes start_animation {
-  from {opacity: 0; top: 100%}
+  from {opacity: 0; top: var(--start-top)}
   to {opacity: 1; top: var(--end-top)}
 }
 
@@ -20,6 +20,7 @@ body {
     transform: translate(-50%, -50%);
     animation-name: start_animation;
     animation-duration: 3s;
+    --start-top: 100%;
     --end-top: 30%;
   }
 
@@ -100,7 +101,8 @@ body {
   
   transform: translate(-50%, -50%);
   animation-name: start_animation;
-  animation-duration: 3s;
+  animation-duration: 2s;
+  --start-top: 0%;
   --end-top: 79%;
 }
 
