@@ -29,7 +29,7 @@ class Project {
  * @type {Project[]}
  */
 const project_list = [
-    new Project("No Projects", "There isn't any projects that I contributed.")
+    new Project("No Projects", "There isn't any projects that I contributed."),
 ]
 
 /**
