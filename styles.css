@@ -1,0 +1,135 @@
+body {
+  background-color: rgb(165, 244, 244);
+}
+
+@keyframes start_animation {
+  from {opacity: 0; top: 100%}
+  to {opacity: 1; top: var(--end-top)}
+}
+
+.introduction_block {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 40%;
+    height: 50%;
+    border-radius: 25px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(66, 62, 90, 0.4);
+    transform: translate(-50%, -50%);
+    animation-name: start_animation;
+    animation-duration: 3s;
+    --end-top: 30%;
+  }
+
+
+.title {
+  position: fixed;
+  color: rgb(246, 223, 140);
+  background-color: rgba(59, 59, 59, 0.3);
+  border-radius: 10px;
+  block-size: fit-content;
+  top: 3%;
+  left: 50%;
+  padding: 5px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.description {
+  position: fixed;
+  color: rgba(245, 245, 245, 0.807);
+  font-weight: lighter;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.contacts {
+  list-style-type: none;
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%, -50%);
+}
+
+.contacts_text {
+  color: whitesmoke;
+}
+.contacts_li {
+  display: inline;
+  margin: 30px;
+}
+
+
+.icon {
+  position: relative;
+}
+
+
+
+#hover {
+  position: relative;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  font-style: normal;
+  font-size:large;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  font-size: 75px;
+  width: 100px;
+  height: 100px;
+  transform: translate(0, 0);
+  color: black
+}
+
+.projects_block {
+  position: fixed;
+  top: 79%;
+  left: 50%;
+  width: 70%;
+  height: 40%;
+  border-radius: 25px;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(66, 62, 90, 0.4);
+  
+  transform: translate(-50%, -50%);
+  animation-name: start_animation;
+  animation-duration: 3s;
+  --end-top: 79%;
+}
+
+.projects_list {
+  position: fixed;
+  list-style-type: none;
+  top: 45%;
+  left: 50%;
+  padding: 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.project {
+  display: inline 3;
+  margin: 15px;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(0,0,0, 0.45);
+  border-radius: 25px;
+  padding: 0;
+}
+
+.project_name {
+  color: whitesmoke;
+  font-size: 35px;
+}
+
+.project_description {
+  color: gray;
+  font-size: 20px;
+}
